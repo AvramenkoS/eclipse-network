@@ -1,0 +1,69 @@
+@import "./_mixin.scss";
+@import "./_variables.scss";
+@import "./_header.scss";
+@import "./_intro.scss";
+
+
+html {
+  box-sizing: border-box;
+  --bgColorMenu: #fff;
+  --bgColorBody: #FBF8FE;
+  --navColor: #2B3543;
+  --navHoverColor: #A400FF;
+}
+
+html *,
+html *::before,
+html *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 2000px;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  background: var(--bgColorBody) url(../img/bg.png) top / contain no-repeat;
+}
+
+ul, ol, h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1105px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #2B3543;
+}
+
+.btn {
+  background: linear-gradient(142.87deg, #6A11CB 12.55%, #A400FF 108.54%);
+  box-shadow: 0 2px 4px rgba(43, 53, 67, 0.538701);
+  border-radius: 12px;
+  border: none;
+  width: 100%;
+  max-width: 278px;
+  height: 58px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+button {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}

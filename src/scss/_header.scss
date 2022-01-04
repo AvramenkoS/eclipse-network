@@ -1,0 +1,41 @@
+.header {
+  //position: fixed;
+  //z-index: 10;
+  //top: 0;
+  //left: 0;
+  width: 100%;
+  background: var(--bgColorMenu);
+  padding: 20px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+
+  &__item {
+    margin-left: 30px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--navColor);
+    transition: color .2s linear;
+
+    &:hover {
+      color: var(--navHoverColor);
+    }
+  }
+}

@@ -1,0 +1,4 @@
+@import "mixin";
+
+@include font-face(HelveticaNeueCyr, "../fonts/HelveticaNeueCyr-Light", 300, normal);
+@include font-face(HelveticaNeueCyr, "../fonts/HelveticaNeueCyr-Medium", 400, normal);
